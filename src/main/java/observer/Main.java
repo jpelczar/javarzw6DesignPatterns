@@ -16,15 +16,6 @@ public class Main {
         button.click();
         button.removeListener();
         button.click();
-
-
-        for (int h = 0; h < 4; h++) {
-            for (int w = 0; w < 4; w++) {
-                System.out.print(" * ");
-            }
-            System.out.println();
-        }
-
     }
 
 }
