@@ -9,7 +9,12 @@ public class User implements Cloneable {
 
     @Override
     protected User clone() throws CloneNotSupportedException {
-        return (User) super.clone();
+        User user = (User) super.clone();
+        Date copyDate = new Date();
+        copyDate.setTime(createDate.getTime());
+        user.setCreateDate(copyDate);
+
+        return user;
     }
 
     public String getName() {
